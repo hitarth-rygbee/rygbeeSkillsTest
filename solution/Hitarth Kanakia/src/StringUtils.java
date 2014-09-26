@@ -17,4 +17,17 @@ public class StringUtils {
         }
         return ans;
     }
+
+    public static String removeDuplicateConsecutiveChar(String str){
+        String ans = "";
+        for(int i=0;i<str.length();){
+            char c = str.charAt(i);
+            ans += c;
+            i++;
+            while( i<str.length() && str.charAt(i)==c )
+                i++;
+        }
+        return ans;
+    }
+
 }

@@ -9,8 +9,9 @@ public class Test {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the input string:");
         String str = sc.nextLine();
-        String duplicateRemoved = StringUtils.removeDuplicateChar(str);
-        System.out.println("The string "+"\""+str+"\" after removing duplicate characters is "+"\""+duplicateRemoved+"\"");
+        String duplicateCharRemoved = StringUtils.removeDuplicateChar(str);
+        System.out.println("The string "+"\""+str+"\" after removing duplicate characters is "+"\""+duplicateCharRemoved+"\"");
+        String consecutiveDuplicateCharRemoved = StringUtils.removeDuplicateConsecutiveChar(str);
+        System.out.println("The string "+"\""+str+"\" after removing consecutive duplicate characters is "+"\""+consecutiveDuplicateCharRemoved+"\"");
     }
-
 }
